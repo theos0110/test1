@@ -1,0 +1,33 @@
+<ion-header>
+        <ion-navbar>
+          <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Check in</ion-title>
+        </ion-navbar>
+      </ion-header>
+    
+    
+      
+    <ion-content padding>
+        <br>
+            <ion-list>
+                    <ion-item>
+                      <ion-label>ระดับชั้น</ion-label>
+                      <ion-select [(ngModel)]="class">
+                        <ion-option value="1_1">ม.1/1</ion-option>
+                        <ion-option value="1_2">ม.1/2</ion-option>
+                        <ion-option value="1_3">ม.1/3</ion-option>
+                        <ion-option value="2_1">ม.2/1</ion-option>
+                        <ion-option value="2_2">ม.2/2</ion-option>
+                        <ion-option value="2_3">ม.2/3</ion-option>
+                      </ion-select>
+                    </ion-item>
+            </ion-list>
+            <div class="center">
+                <button ion-button floating-start round outline color="secondary" icon-left (click)="goToCheckin()">
+                <ion-icon ios="ios-checkmark-circle-outline" md="md-checkmark-circle-outline"></ion-icon>
+                Check in</button>      
+            </div>          
+    </ion-content>
+    
